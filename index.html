@@ -2,45 +2,34 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <script data-cfasync="false" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script type="text/javascript" src="js/snap.svg.js"></script>
+  <script type="text/javascript" src="js/ifvisible.js"></script>
+  <script type="text/javascript" src="js/animation.js"></script>
   <title>Meta Reflexo Geneve</title>
   <style>
-    html {
-      height: 100%;
+    html, body {
+      margin: 0;
+      background-color: white;
+    }
+    
+    #content {
+      margin: auto;
+      background-color: white;
     }
 
-    body {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
+    #main {
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-    
-    .under_construction {
-      width: auto;
-      border: 1px solid #AAAAAA;
-
-      padding: 50px;
-    }
-}​
+      height: 100vh;
+    }​
   </style>
 </head>
 <body>
-
-    <div class="under_construction">
-    
-      <h1 style="text-align: center;">Welcome to Meta Reflexo Geneve</h1>
-
-      <br/>
-      <p>This page is under construction, but you can call me to 076 79 91168 or email me to info@meta-reflexo-geneve.ch</p>
-
+    <div id="content">
+      <div id="main">
+        <svg id="svg"></svg>
+      </div>
     </div>
-
 </body>
 </html>
